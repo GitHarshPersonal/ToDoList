@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navBar{
+  background-color: rgb(55, 52, 52);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navBar h2{
+  color: white;
+  padding: 6px;
+}
+.navBar ul{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
+}
+.navBar ul li{
+  list-style: none;
+  padding: 10px;
+}
+.navBar ul li:hover{
+  background-color: rgb(89, 83, 83) ;
+}
+a{
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.todoMain{
+  padding: 20px;
+  padding-top: 0;
+  margin: 30px;
+  background-color: rgb(255, 255, 148);
+  /* height: 77%; */
+  min-height: 77.5vh;
+  border-radius: 16px;
+}
+.todoMain h2{
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+  font-family: cursive;
+}
+.item{
+  padding: 16px;
+  margin: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.itemHead{
+  font-size: 24px;
+  color: red;
+  margin-right: 10px;
+}
+.itemDesc{
+  display: inline;
+}
+.itemBtn{
+  padding: 6px;
+  background-color: red;
+  color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  max-height: 35px;
+  cursor: pointer;
+}
+.addTodoMain{
+  text-align: center;
+}
+.addTodoMain input{
+  padding: 8px;
+  width: 20%;
+  background-color: rgb(248, 248, 194);
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 2px;
+}
+.addTodoMain input:focus{
+  outline: none;
+}
+.addTodoMain button{
+  padding: 8px;
+  background-color: red;
+  color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.addTodoMain button:active{
+  background-color: rgb(239, 51, 51);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.footer{
+  background-color: rgb(55, 52, 52);
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+
+
+.about{
+  padding: 40px;
+  min-height: 77.5vh;
+}
+.about h1{
+  color: green;
+  margin: 10px auto;
+}
+
+
+.error{
+  padding: 20px;
+  text-align: center;
 }
